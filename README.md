@@ -1,1 +1,1 @@
-Go Studygit init!
+Go Study!
