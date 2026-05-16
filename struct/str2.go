@@ -6,14 +6,24 @@ import (
 )
 
 type person struct {
-    name string
-    age  int
+    firstName string
+    lastName  string
+}
+
+type book struct {
+    title  string
+    author person
 }
 
 
-
-
 func main() {
-	
+	b := book{
+    title: "The Majik Gopher",
+    author: person{
+        firstName: "Christopher",
+        lastName:  "Swanson",
+    },
+}
+fmt.Println(b.author.firstName)
 
 }
